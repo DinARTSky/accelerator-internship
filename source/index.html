@@ -10,16 +10,83 @@
 </head>
 
 <body>
-  <div data-test="slider">slider</div>
-  <div data-test="about">about</div>
-  <div data-test="programs">programs</div>
-  <div data-test="grant">grant</div>
-  <div data-test="news">news</div>
-  <div data-test="FAQ">FAQ</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="contacts">contacts</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+  <div class="wrapper">
+    <div data-test="slider">
+      <!-- Slider main container -->
+      <div class="swiper hero__slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide hero__slide">
+
+            <div class="hero__content container">
+              <h1 class="hero__title title">Глобальный профессиональный опыт обучения за рубежом</h1>
+              <div class="hero__decor">
+                <div class="hero__description-more">
+                  <p class="hero__description">Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                  <button class="button hero__button">
+                    <span class="button__text">подробнее</span>
+                    <div class="button__circle">
+                      <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                        <use href="__spritemap#sprite-icon-arrow"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <div class="hero__angle">
+                  <svg width="26" height="26" role="img" aria-label="декоративный элемент angle">
+                    <use href="__spritemap#sprite-angle"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="hero__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero-1.webp 1x, img/hero-1@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/triple-set-mobile.webp 1x, img/triple-set-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/hero-1.jpg 1x, img/hero-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img src="img/hero-1.jpg" srcset="img/hero-1@2x.jpg 2x" alt="фото студентки">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination hero__pagination"></div>
+      </div>
+
+
+      <header class="header">
+        <div class="header__logo-container">
+          <img src="img/svg/logo.svg" alt="логотип" width="30" height="30">
+        </div>
+        <nav class="header__navigation navigation">
+          <button class="navigation__toggle" type="button">
+            <span class="navigation__menu">Меню</span>
+            <div class="navigation__burger">
+              <svg aria-hidden="true" focusable="false" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+              </svg>
+            </div>
+          </button>
+
+        </nav>
+      </header>
+    </div>
+    <div data-test="about">about</div>
+    <div data-test="programs">programs</div>
+    <div data-test="grant">grant</div>
+    <div data-test="news">news</div>
+    <div data-test="FAQ">FAQ</div>
+    <div data-test="reviews">reviews</div>
+    <div data-test="contacts">contacts</div>
+    <div data-test="form">form</div>
+    <div data-test="footer">footer</div>
+  </div>
   <script type="module" src="js/main.js"></script>
 </body>
 

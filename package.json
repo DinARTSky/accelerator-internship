@@ -43,6 +43,7 @@
     "w3c-html-validator": "1.6.1"
   },
   "dependencies": {
-    "swiper": "11.0.5"
+    "rollup": "^4.9.4",
+    "swiper": "^11.0.5"
   }
 }

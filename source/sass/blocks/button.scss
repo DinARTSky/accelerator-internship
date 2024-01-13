@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  background-color: $color-transparent;
+  color: $color-default-blue;
+  border: 1px solid $color-default-blue;
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  padding: 19px;
+}
+.button__text{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+}
+
+.button__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+  background-color: $color-default-blue;
+  right: 3px;
+}
