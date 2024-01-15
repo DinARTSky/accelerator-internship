@@ -1,3 +1,9 @@
+// import Swiper and modules styles
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
 // Vendor
 // ---------------------------------
 
@@ -14,12 +20,15 @@
 @import "global/container";
 @import "global/reboot";
 @import "global/utils";
+@import "global/list-reset";
 
 
 // Blocks
 // ---------------------------------
 @import "blocks/button";
-@import "blocks/header";
-@import "blocks/hero";
 @import "blocks/title";
+@import "blocks/header";
+@import "blocks/navigation";
+@import "blocks/hero";
+@import "blocks/about";
 

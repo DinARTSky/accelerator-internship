@@ -1,0 +1,25 @@
+.navigation__toggle {
+  padding: 19px 69px 19px 20px;
+  margin-top: -1px;
+  background-color: $color-default-white;
+  position: relative;
+}
+
+.navigation__menu {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+}
+
+.navigation__burger {
+  background-color: $color-default-blue;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 3px;
+  border-radius: 50px;
+}

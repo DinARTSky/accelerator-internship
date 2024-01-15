@@ -17,12 +17,21 @@
   cursor: pointer;
 
   padding: 19px;
+
+  @include vp-767 {
+    padding: 14px;
+  }
 }
 .button__text{
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.02em;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
 .button__circle {
@@ -35,4 +44,9 @@
   border-radius: 50px;
   background-color: $color-default-blue;
   right: 3px;
+
+  @include vp-767 {
+    width: 34px;
+    height: 34px;
+  }
 }

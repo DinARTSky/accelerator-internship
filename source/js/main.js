@@ -3,12 +3,7 @@
 //import 'swiper/css';
 // core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const initHeroSlider = () => {
 
@@ -18,13 +13,17 @@ const initHeroSlider = () => {
   if (heroSlider) {
     // eslint-disable-next-line
     new Swiper(heroSlider, {
-      modules: [Navigation, Pagination],
+      modules: [Navigation, Pagination, Autoplay],
       // If we need pagination
       pagination: {
         el: heroPagination,
         clickable: true,
         bottom: 343,
       },
+      loop: true,
+      /*autoplay: {
+        delay: 3000,
+      },*/
     });
   }
 };
