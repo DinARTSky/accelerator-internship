@@ -1,114 +1,259 @@
 .about__wrapper {
+  @include vp-1439 {
+    margin-top: 100px;
+  }
+  @include vp-767 {
+    margin-top: 60px;
+  }
+
   margin-top: 120px;
 }
 
 .about__content {
+  @include vp-1439 {
+    flex-direction: column;
+    width: 498px;
+
+    gap: 32px;
+  }
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 40px;
+
+    gap: 32px;
+  }
+
   display: flex;
-  gap: 159px;
   margin-bottom: 60px;
+
+  gap: 159px;
 }
 
 .about__title-description {
-  padding-top: 3px;
+  @include vp-1439 {
+    width: 100%;
+    margin-top: -1px;
+    padding-top: 0;
+  }
+
   width: 477px;
+  padding-top: 3px;
 }
 
 .about__title {
+  @include vp-1439 {
+    margin-bottom: 25px;
+  }
+  @include vp-767 {
+    margin-top: 3px;
+    margin-bottom: 13px;
+    margin-left: 1px;
+  }
 
   margin-bottom: 35px;
 }
 
 .about__description {
-  color: $color-default-black;
+  @include vp-1439 {
+    padding-right: 0;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  margin: 0;
+  padding-right: 79px;
+
   font-size: 22px;
   line-height: 32px;
-  padding-right: 79px;
-  margin: 0;
-
+  color: $color-default-black;
 }
 
 .about__goal {
-  margin-top: -2px;
+  @include vp-767 {
+    width: 100%;
+  }
+
   width: 498px;
+  margin-top: -2px;
 }
 
 .about__goal-title {
+  @include vp-1439 {
+    margin-bottom: 22px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+  @include vp-767 {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  margin-bottom: 33px;
+
   font-weight: 400;
   font-size: 32px;
   line-height: 36px;
-  margin-bottom: 33px;
 }
 
 .about__goal-description {
-  color: $color-default-black;
-  font-size: 16px;
-  line-height: 26px;
+  @include vp-1439 {
+    margin-bottom: 36px;
+
+    line-height: 20px;
+  }
+  @include vp-767 {
+    margin-bottom: 26px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   margin: 0;
   margin-bottom: 33px;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-default-black;
 }
 
 .about__button {
-  padding-left: 29px;
+  @include vp-767 {
+    padding-right: 58px;
+    padding-left: 19px;
+  }
+
   padding-right: 80px;
+  padding-left: 29px;
 }
 
 .about__list {
-  color: $color-default-white;
-  background-color: $color-default-blue;
+  @include vp-1439 {
+    padding: 62px 40px 40px 60px;
+
+    column-gap: 50px;
+
+    row-gap: 42px;
+  }
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    padding: 42px 20px 40px 30px;
+
+    gap: 22px;
+  }
+
+  display: grid;
   padding: 72px 106px 32px 126px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 52px;
-  row-gap: 54px;
+
+  color: $color-default-white;
+
+  background-color: $color-default-blue;
   border-radius: 20px;
+
+  gap: 52px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 54px;
 }
 
 .about__item {
+  @include vp-1439 {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 16px 25px 29px;
+
+    gap: 7px;
+  }
+  @include vp-767 {
+    padding: 19px 17px 23px 19px;
+
+    gap: 4px;
+  }
+
   position: relative;
+
   display: flex;
   justify-content: space-between;
   width: 478px;
   padding: 29px 59px;
+  padding-top: 25px;
+  padding-right: 57px;
+  padding-bottom: 25px;
+
   border: 1px solid $color-default-white;
   border-radius: 16px;
+
   gap: 24px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .about__item-title {
+  @include vp-1439 {
+    margin-top: 0;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+  @include vp-767 {
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  width: 171px;
+  margin-top: 5px;
+
   font-weight: 400;
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
   letter-spacing: 0.01em;
-  width: 171px;
-  margin-top: 5px;
 }
 
 .about__item-description {
+  @include vp-1439 {
+    width: 100%;
+  }
+  @include vp-767 {
+    font-size: 14px;
+  }
+
+  width: 190px;
+  margin: 0;
+
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  margin: 0;
-  width: 190px;
 }
 
 .about__star-wrappper {
   position: absolute;
   top: -23px;
   left: -21px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 42px;
   height: 42px;
+
   background-color: $color-default-blue;
-  display: flex;justify-content: center;
-  align-items: center;
 }
 
 .about__star {
+  @include vp-767 {
+    width: 18px;
+    height: 18px;
+  }
+
   width: 22px;
   height: 22px;
 }
-
-
-

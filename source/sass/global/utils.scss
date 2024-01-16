@@ -6,6 +6,7 @@
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+
   background-color: #f0efe9;
 
   .header,
@@ -19,10 +20,10 @@
 }
 
 .rouble {
+  font-weight: 400 !important;
   font-family: $ff-rouble;
   /* stylelint-disable */
   text-transform: lowercase !important;
-  font-weight: 400 !important;
   /* stylelint-enable */
 }
 
