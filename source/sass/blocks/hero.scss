@@ -4,7 +4,7 @@
   --swiper-pagination-bullet-width: 10px;
   --swiper-pagination-bullet-height: 10px;
   --swiper-pagination-bullet-opacity: 1;
-  --swiper-pagination-bottom: 357px;
+  --swiper-pagination-bottom: 367px;
 
   @include vp-1439 {
     --swiper-pagination-bottom: 324px;
@@ -43,8 +43,8 @@
   position: absolute;
   width: 100%;
   z-index: 1;
-  padding-top: 419px;
-  padding-bottom: 50px;
+  padding-top: 409px;
+  padding-bottom: 60px;
 
   @include vp-1439 {
     padding-top: 676px;
