@@ -30,6 +30,31 @@ const initHeroSlider = () => {
 
 initHeroSlider();
 
+const initProgramsSlider = () => {
+
+  const programsSlider = document.querySelector('.programs__slider');
+  const programsPagination = document.querySelector('.programs__pagination');
+
+  if (programsSlider) {
+    // eslint-disable-next-line
+    new Swiper(programsSlider, {
+      modules: [Navigation, Pagination, Autoplay],
+      // If we need pagination
+      pagination: {
+        el: programsPagination,
+        clickable: true,
+        bottom: 343,
+      },
+      loop: true,
+      /*autoplay: {
+        delay: 3000,
+      },*/
+    });
+  }
+};
+
+initProgramsSlider();
+
 //export { initHeroSlider };
 
 //import { initHeroSlider } from './modules/slider/hero-slider';

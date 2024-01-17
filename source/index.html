@@ -242,7 +242,63 @@
       </div>
 
     </div>
-    <div data-test="programs">programs</div>
+    <section class="programs" data-test="programs">
+      <div class="programs__wrapper container">
+        <div class="programs__heading">
+          <h2 class="title programs__title">Программы</h2>
+          <button class="button programs__button">
+            <span class="button__text">Все программы</span>
+            <div class="button__circle">
+              <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                <use href="__spritemap#sprite-icon-arrow"></use>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper programs__slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide programs__slide">
+            <div class="programs__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/programs-desktop-1.webp 1x, img/programs-desktop-1@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-tablet-1.webp 1x, img/programs-tablet-1@2x.webp 2x">
+                <source type="image/webp" srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/programs-desktop-1.jpg 1x, img/programs-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/programs-tablet-1.jpg 1x, img/programs-tablet-1@2x.jpg 2x">
+                <img src="img/programs-mobile-1.jpg" srcset="img/programs-mobile-1@2x.jpg 2x" alt="фото студентки">
+              </picture>
+            </div>
+            <div class="programs__content">
+              <h3 class="programs__slide-title">Стажировки</h3>
+              <p class="programs__slide-description">Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+              <button class="button programs__slide-button">
+                <div class="button__circle">
+                  <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                    <use href="__spritemap#sprite-icon-arrow"></use>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="programs__button-prev"></div>
+        <div class="programs__button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      </div>
+
+    </section>
     <div data-test="grant">grant</div>
     <div data-test="news">news</div>
     <div data-test="FAQ">FAQ</div>
