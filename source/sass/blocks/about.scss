@@ -160,7 +160,7 @@
 
   gap: 52px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   row-gap: 54px;
 }
 
@@ -180,18 +180,32 @@
 
   position: relative;
 
-  display: flex;
-  justify-content: space-between;
-  width: 478px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 29px 59px;
   padding-top: 25px;
   padding-right: 57px;
   padding-bottom: 25px;
-
   border: 1px solid $color-default-white;
   border-radius: 16px;
 
-  gap: 24px;
+  &--first {
+    gap: 0;
+  }
+
+  &--second {
+    gap: 24px;
+  }
+
+  &--third {
+    padding-left: 53px;
+    padding-right: 30px;
+    gap: 0;
+  }
+
+  &--fourth {
+    gap: 11px;
+  }
 }
 
 .about__item-title {
@@ -208,7 +222,7 @@
     line-height: 20px;
   }
 
-  width: 171px;
+  width: auto;
   margin-top: 5px;
 
   font-weight: 400;
@@ -226,7 +240,7 @@
     font-size: 14px;
   }
 
-  width: 190px;
+  width: 100%;
   margin: 0;
 
   font-weight: 300;

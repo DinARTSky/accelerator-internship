@@ -3,7 +3,7 @@
 //import 'swiper/css';
 // core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, Scrollbar } from 'swiper/modules';
 
 const initHeroSlider = () => {
 
@@ -13,7 +13,7 @@ const initHeroSlider = () => {
   if (heroSlider) {
     // eslint-disable-next-line
     new Swiper(heroSlider, {
-      modules: [Navigation, Pagination, Autoplay],
+      modules: [Navigation, Pagination, Autoplay, Scrollbar],
       // If we need pagination
       pagination: {
         el: heroPagination,
@@ -33,22 +33,42 @@ initHeroSlider();
 const initProgramsSlider = () => {
 
   const programsSlider = document.querySelector('.programs__slider');
-  const programsPagination = document.querySelector('.programs__pagination');
+  const programsScrollbar = document.querySelector('.swiper-scrollbar');
+  const programsButtonPrev = document.querySelector('.programs__button--prev');
+  const programsButtonNext = document.querySelector('.programs__button--next');
 
   if (programsSlider) {
     // eslint-disable-next-line
     new Swiper(programsSlider, {
       modules: [Navigation, Pagination, Autoplay],
-      // If we need pagination
-      pagination: {
-        el: programsPagination,
-        clickable: true,
-        bottom: 343,
+      // And if we need scrollbar
+      scrollbar: {
+        el: programsScrollbar,
       },
-      loop: true,
-      /*autoplay: {
-        delay: 3000,
-      },*/
+      // Navigation arrows
+      navigation: {
+        nextEl: programsButtonNext,
+        prevEl: programsButtonPrev,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          initialSlide: 1,
+          loop: true,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 18,
+          initialSlide: 1,
+          loop: true,
+        },
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 32,
+          initialSlide: 1,
+          allowTouchMove: false,
+        },
+      },
     });
   }
 };
