@@ -211,7 +211,7 @@
             </div>
           </li>
           <li class="about__item about__item--second">
-            <h4 class="title about__item-title">Более 3000 участников</h4>
+            <h4 class="title about__item-title">Более<br> 3000 участников</h4>
             <p class="about__item-description">уже успешно прошли программу от&nbsp;«Стажировка» и&nbsp;остались в разных странах</p>
             <div class="about__star-wrappper">
               <svg class="about__star" role="img" aria-label="декоративный элемент блока О нас">
@@ -230,7 +230,7 @@
           </li>
           <li class="about__item about__item--fourth">
             <h4 class="title about__item-title">участники из&nbsp;60 стран</h4>
-            <p class="about__item-description">студенты со всего мира приезжают на&nbsp;программу «Стажировка»</p>
+            <p class="about__item-description">студенты со всего<br> мира приезжают на&nbsp;программу «Стажировка»</p>
             <div class="about__star-wrappper">
               <svg class="about__star" role="img" aria-label="декоративный элемент блока О нас">
                 <use href="__spritemap#sprite-star"></use>
@@ -254,158 +254,160 @@
               </svg>
             </div>
           </button>
-        </div>
-        <!-- Slider main container -->
-        <div class="swiper programs__slider">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper programs__slider-wrapper">
-          <!-- Slides -->
-          <!-- 1 слайд -->
-          <div class="swiper-slide programs__slide">
-            <div class="programs__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/programs-desktop-1.webp 1x, img/programs-desktop-1@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-tablet-1.webp 1x, img/programs-tablet-1@2x.webp 2x">
-                <source type="image/webp" srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/programs-desktop-1.jpg 1x, img/programs-desktop-1@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/programs-tablet-1.jpg 1x, img/programs-tablet-1@2x.jpg 2x">
-                <img src="img/programs-mobile-1.jpg" srcset="img/programs-mobile-1@2x.jpg 2x" alt="фото карточки стажировка">
-              </picture>
-            </div>
-            <div class="programs__text">
-              <div class="programs__decor">
-                <h3 class="programs__slide-title">Стажировки</h3>
-                <svg class="hero__angle" role="img" aria-label="декоративный элемент angle">
-                  <use href="__spritemap#sprite-angle"></use>
+          <div class="programs__scrollbar-buttons">
+            <!-- If we need scrollbar -->
+            <div class="programs__scrollbar swiper-scrollbar"></div>
+            <div class="programs__slider-buttons">
+              <!-- If we need navigation buttons -->
+              <div class="programs__slider-button programs__button--prev">
+                <svg class="programs__slider-arrow" role="img" aria-label="cтрелка кнопки">
+                  <use href="__spritemap#sprite-slider-arrow"></use>
                 </svg>
               </div>
-              <div class="programs__description-button">
-                <p class="programs__slide-description">Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
-                <button class="button programs__slide-button">
-                  <div class="button__circle">
-                    <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
-                      <use href="__spritemap#sprite-icon-arrow"></use>
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 2 слайд -->
-          <div class="swiper-slide programs__slide">
-            <div class="programs__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/programs-desktop-2.webp 1x, img/programs-desktop-2@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-tablet-1.webp 1x, img/programs-tablet-1@2x.webp 2x">
-                <source type="image/webp" srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/programs-desktop-2.jpg 1x, img/programs-desktop-2@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/programs-tablet-1.jpg 1x, img/programs-tablet-1@2x.jpg 2x">
-                <img src="img/programs-mobile-1.jpg" srcset="img/programs-mobile-1@2x.jpg 2x" alt="фото карточки стажировка">
-              </picture>
-            </div>
-            <div class="programs__text">
-              <div class="programs__decor">
-                <h3 class="programs__slide-title">Волонтёрство</h3>
-                <svg class="hero__angle" role="img" aria-label="декоративный элемент angle">
-                  <use href="__spritemap#sprite-angle"></use>
+              <div class="programs__slider-button programs__button--next">
+                <svg class="programs__slider-arrow" role="img" aria-label="cтрелка кнопки">
+                  <use href="__spritemap#sprite-slider-arrow"></use>
                 </svg>
               </div>
-              <div class="programs__description-button">
-                <p class="programs__slide-description">Помогайте другим и развивайте свои лидерские качества.</p>
-                <button class="button programs__slide-button">
-                  <div class="button__circle">
-                    <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
-                      <use href="__spritemap#sprite-icon-arrow"></use>
-                    </svg>
+            </div>
+          </div>
+
+          <div class="programs__slider-container">
+            <!-- Slider main container -->
+            <div class="swiper programs__slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <!-- 1 слайд -->
+                <div class="swiper-slide programs__slide">
+                  <div class="programs__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/programs-desktop-1.webp 1x, img/programs-desktop-1@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-tablet-1.webp 1x, img/programs-tablet-1@2x.webp 2x">
+                      <source type="image/webp" srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/programs-desktop-1.jpg 1x, img/programs-desktop-1@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/programs-tablet-1.jpg 1x, img/programs-tablet-1@2x.jpg 2x">
+                      <img src="img/programs-mobile-1.jpg" srcset="img/programs-mobile-1@2x.jpg 2x" alt="фото карточки стажировка">
+                    </picture>
                   </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 3 слайд -->
-          <div class="swiper-slide programs__slide">
-            <div class="programs__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/programs-desktop-3.webp 1x, img/programs-desktop-3@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-tablet-1.webp 1x, img/programs-tablet-1@2x.webp 2x">
-                <source type="image/webp" srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/programs-desktop-3.jpg 1x, img/programs-desktop-3@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/programs-tablet-1.jpg 1x, img/programs-tablet-1@2x.jpg 2x">
-                <img src="img/programs-mobile-1.jpg" srcset="img/programs-mobile-1@2x.jpg 2x" alt="фото карточки стажировка">
-              </picture>
-            </div>
-            <div class="programs__text">
-              <div class="programs__decor">
-                <h3 class="programs__slide-title">Учёба</h3>
-                <svg class="hero__angle" role="img" aria-label="декоративный элемент angle">
-                  <use href="__spritemap#sprite-angle"></use>
-                </svg>
-              </div>
-              <div class="programs__description-button">
-                <p class="programs__slide-description">Получите образование и измените своё будущее.</p>
-                <button class="button programs__slide-button">
-                  <div class="button__circle">
-                    <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
-                      <use href="__spritemap#sprite-icon-arrow"></use>
-                    </svg>
+                  <div class="programs__text">
+                    <div class="programs__decor">
+                      <h3 class="programs__slide-title">Стажировки</h3>
+                      <svg class="hero__angle" role="img" aria-label="декоративный элемент angle">
+                        <use href="__spritemap#sprite-angle"></use>
+                      </svg>
+                    </div>
+                    <div class="programs__description-button">
+                      <p class="programs__slide-description">Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                      <button class="button programs__slide-button">
+                        <div class="button__circle">
+                          <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                            <use href="__spritemap#sprite-icon-arrow"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
                   </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- 4 слайд -->
-          <div class="swiper-slide programs__slide">
-            <div class="programs__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/programs-desktop-3.webp 1x, img/programs-desktop-3@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-tablet-1.webp 1x, img/programs-tablet-1@2x.webp 2x">
-                <source type="image/webp" srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/programs-desktop-3.jpg 1x, img/programs-desktop-3@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/programs-tablet-1.jpg 1x, img/programs-tablet-1@2x.jpg 2x">
-                <img src="img/programs-mobile-1.jpg" srcset="img/programs-mobile-1@2x.jpg 2x" alt="фото карточки стажировка">
-              </picture>
-            </div>
-            <div class="programs__text">
-              <div class="programs__decor">
-                <h3 class="programs__slide-title">Религия</h3>
-                <svg class="hero__angle" role="img" aria-label="декоративный элемент angle">
-                  <use href="__spritemap#sprite-angle"></use>
-                </svg>
-              </div>
-              <div class="programs__description-button">
-                <p class="programs__slide-description">Получите образование и измените своё будущее.</p>
-                <button class="button programs__slide-button">
-                  <div class="button__circle">
-                    <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
-                      <use href="__spritemap#sprite-icon-arrow"></use>
-                    </svg>
+                </div>
+                <!-- 2 слайд -->
+                <div class="swiper-slide programs__slide">
+                  <div class="programs__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/programs-desktop-2.webp 1x, img/programs-desktop-2@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-tablet-2.webp 1x, img/programs-tablet-2@2x.webp 2x">
+                      <source type="image/webp" srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/programs-desktop-2.jpg 1x, img/programs-desktop-2@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/programs-tablet-2.jpg 1x, img/programs-tablet-2@2x.jpg 2x">
+                      <img src="img/programs-mobile-1.jpg" srcset="img/programs-mobile-1@2x.jpg 2x" alt="фото карточки стажировка">
+                    </picture>
                   </div>
-                </button>
+                  <div class="programs__text">
+                    <div class="programs__decor">
+                      <h3 class="programs__slide-title">Волонтёрство</h3>
+                      <svg class="hero__angle" role="img" aria-label="декоративный элемент angle">
+                        <use href="__spritemap#sprite-angle"></use>
+                      </svg>
+                    </div>
+                    <div class="programs__description-button">
+                      <p class="programs__slide-description">Помогайте другим и развивайте свои лидерские качества.</p>
+                      <button class="button programs__slide-button">
+                        <div class="button__circle">
+                          <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                            <use href="__spritemap#sprite-icon-arrow"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 слайд -->
+                <div class="swiper-slide programs__slide">
+                  <div class="programs__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/programs-desktop-3.webp 1x, img/programs-desktop-3@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-tablet-2.webp 1x, img/programs-tablet-2@2x.webp 2x">
+                      <source type="image/webp" srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/programs-desktop-3.jpg 1x, img/programs-desktop-3@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/programs-tablet-2.jpg 1x, img/programs-tablet-2@2x.jpg 2x">
+                      <img src="img/programs-mobile-1.jpg" srcset="img/programs-mobile-1@2x.jpg 2x" alt="фото карточки стажировка">
+                    </picture>
+                  </div>
+                  <div class="programs__text">
+                    <div class="programs__decor">
+                      <h3 class="programs__slide-title">Учёба</h3>
+                      <svg class="hero__angle" role="img" aria-label="декоративный элемент angle">
+                        <use href="__spritemap#sprite-angle"></use>
+                      </svg>
+                    </div>
+                    <div class="programs__description-button">
+                      <p class="programs__slide-description">Получите образование и измените своё будущее.</p>
+                      <button class="button programs__slide-button">
+                        <div class="button__circle">
+                          <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                            <use href="__spritemap#sprite-icon-arrow"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 слайд -->
+                <div class="swiper-slide programs__slide">
+                  <div class="programs__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/programs-desktop-3.webp 1x, img/programs-desktop-3@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/programs-tablet-2.webp 1x, img/programs-tablet-2@2x.webp 2x">
+                      <source type="image/webp" srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/programs-desktop-3.jpg 1x, img/programs-desktop-3@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/programs-tablet-2.jpg 1x, img/programs-tablet-2@2x.jpg 2x">
+                      <img src="img/programs-mobile-1.jpg" srcset="img/programs-mobile-1@2x.jpg 2x" alt="фото карточки стажировка">
+                    </picture>
+                  </div>
+                  <div class="programs__text">
+                    <div class="programs__decor">
+                      <h3 class="programs__slide-title">Религия</h3>
+                      <svg class="hero__angle" role="img" aria-label="декоративный элемент angle">
+                        <use href="__spritemap#sprite-angle"></use>
+                      </svg>
+                    </div>
+                    <div class="programs__description-button">
+                      <p class="programs__slide-description">Получите образование и измените своё будущее.</p>
+                      <button class="button programs__slide-button">
+                        <div class="button__circle">
+                          <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                            <use href="__spritemap#sprite-icon-arrow"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="programs__scrollbar-buttons">
-          <!-- If we need scrollbar -->
-          <div class="programs__scrollbar swiper-scrollbar"></div>
-          <div class="programs__slider-buttons">
-            <!-- If we need navigation buttons -->
-            <div class="programs__slider-button programs__button--prev">
-              <svg class="programs__slider-arrow" role="img" aria-label="cтрелка кнопки">
-                <use href="__spritemap#sprite-slider-arrow"></use>
-              </svg>
-            </div>
-            <div class="programs__slider-button programs__button--next">
-              <svg class="programs__slider-arrow" role="img" aria-label="cтрелка кнопки">
-                <use href="__spritemap#sprite-slider-arrow"></use>
-              </svg>
-            </div>
-          </div>
+
         </div>
       </div>
-
-      </div>
-
     </section>
     <div data-test="grant">grant</div>
     <div data-test="news">news</div>
@@ -415,7 +417,7 @@
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
   </div>
-  </div>
+
   <script type="module" src="js/main.js"></script>
 </body>
 

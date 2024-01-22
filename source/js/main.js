@@ -53,19 +53,19 @@ const initProgramsSlider = () => {
       breakpoints: {
         320: {
           slidesPerView: 1,
-          initialSlide: 1,
+          initialSlide: 0,
           loop: true,
         },
         768: {
-          slidesPerView: 2,
-          spaceBetween: 18,
-          initialSlide: 1,
+          slidesPerView: 2.125,
+          spaceBetween: 30,
+          initialSlide: 0,
           loop: true,
         },
         1440: {
           slidesPerView: 3,
           spaceBetween: 32,
-          initialSlide: 1,
+          initialSlide:0,
           allowTouchMove: false,
         },
       },
