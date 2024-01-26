@@ -75,6 +75,54 @@ const initProgramsSlider = () => {
 
 initProgramsSlider();
 
+const initnewsSlider = () => {
+
+  const newsSlider = document.querySelector('.news__slider');
+  const newsPagination = document.querySelector('.news__pagination');
+  const newsButtonPrev = document.querySelector('.news__button--prev');
+  const newsButtonNext = document.querySelector('.news__button--next');
+
+  if (newsSlider) {
+    // eslint-disable-next-line
+    new Swiper(newsSlider, {
+      modules: [Navigation, Pagination, Autoplay],
+      // And if we need scrollbar
+      pagination: {
+        el: newsPagination,
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: newsButtonNext,
+        prevEl: newsButtonPrev,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          initialSlide: 0,
+          loop: true,
+        },
+        768: {
+          slidesPerView: 2.125,
+          spaceBetween: 30,
+          initialSlide: 0,
+          loop: true,
+        },
+        1440: {
+          slidesPerView: 'auto',
+          spaceBetween: 32,
+          initialSlide:0,
+        },
+      },
+    });
+  }
+};
+
+initnewsSlider();
+
 //export { initHeroSlider };
 
 //import { initHeroSlider } from './modules/slider/hero-slider';

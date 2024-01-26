@@ -329,7 +329,7 @@
                       </svg>
                     </div>
                     <div class="programs__description-button">
-                      <p class="programs__slide-description">Помогайте другим и развивайте свои лидерские качества.</p>
+                      <p class="programs__slide-description">Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
                       <button class="button programs__slide-button">
                         <div class="button__circle">
                           <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
@@ -409,23 +409,401 @@
         </div>
       </div>
     </section>
-    <section data-test="grant" class="grant container">
-      <div class="grant__heading">
-        <h2 class="grant__title">Как поехать</h2>
-        <p class="grant__description">Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
-        <div class="grant__image">
+    <section data-test="grant" class="grant">
+      <div class="grant__wrapper container">
+        <div class="grant__content">
+          <h2 class="title grant__title">Как поехать</h2>
+          <p class="grant__description">Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных программах и&nbsp;городах, в которых можете пройти программу.</p>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/grant-desktop.webp 1x, img/grant-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/grant-tablet.webp 1x, img/grant-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/grant-mobile.webp 1x, img/grant-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/grant-desktop.jpg 1x, img/grant-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/grant-tablet.jpg 1x, img/grant-tablet@2x.jpg 2x">
-            <img src="img/grant-mobile.jpg" srcset="img/grant-mobile@2x.jpg 2x" alt="фото блока Как поехать">
+            <img class="grant__image" src="img/grant-mobile.jpg" srcset="img/grant-mobile@2x.jpg 2x" alt="фото блока Как поехать">
           </picture>
+        </div>
+        <div class="grant__content features">
+          <h3 class="features__title">Чтобы получить грант на&nbsp;обучение, вам нужно:</h3>
+          <ul class="features__list list-reset">
+            <li class="features__item">
+              Быть в возрасте от 16 до 30 лет
+              <span class="features__number">1</span>
+            </li>
+            <li class="features__item">
+              Иметь оконченное среднее образование
+              <span class="features__number">2</span>
+            </li>
+            <li class="features__item">
+              Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку
+              <span class="features__number">3</span>
+            </li>
+            <li class="features__item">
+              За последние 2 года быть не&nbsp;больше 3х месяцев подряд непрерывно в одной стране
+              <span class="features__number">4</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-    <div data-test="news">news</div>
+    <section data-test="news" class="news container">
+      <h2 class="title news__title">Новости и материалы</h2>
+      <ul class="news__list list-reset">
+        <li class="news__item news__item--active">общее</li>
+        <li class="news__item">Волонтёрство</li>
+        <li class="news__item">Стажировки</li>
+        <li class="news__item">Карьера</li>
+        <li class="news__item">путешествия</li>
+      </ul>
+
+      <div class="swiper news__slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- 1 слайд -->
+          <div class="swiper-slide news__slide">
+            <div class="news__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-desktop-1.webp 1x, img/news-desktop-1@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/news-tablet-1.webp 1x, img/news-tablet-1@2x.webp 2x">
+                <source type="image/webp" srcset="img/news-mobile-1.webp 1x, img/news-mobile-1@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/news-desktop-1.jpg 1x, img/news-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/news-tablet-1.jpg 1x, img/news-tablet-1@2x.jpg 2x">
+                <img src="img/news-mobile-1.jpg" srcset="img/news-mobile-1@2x.jpg 2x" alt="фото карточки стажировка">
+              </picture>
+            </div>
+            <div class="news__text">
+              <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                <use href="__spritemap#sprite-angle"></use>
+              </svg>
+              <div class="news__decor">
+                <h3 class="news__date">23/03/2023</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <h3 class="news__slide-title">Интервью с участницей программы стажировки</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <div class="news__description-button">
+                  <p class="news__slide-description">Саша рассказывает, как попала в программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
+                  <button class="button news__slide-button">
+                    <div class="button__circle">
+                      <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                        <use href="__spritemap#sprite-icon-arrow"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 слайд -->
+          <div class="swiper-slide news__slide">
+            <div class="news__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-desktop-2.webp 1x, img/news-desktop-2@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/news-tablet-2.webp 1x, img/news-tablet-2@2x.webp 2x">
+                <source type="image/webp" srcset="img/news-mobile-2.webp 1x, img/news-mobile-2@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/news-desktop-2.jpg 1x, img/news-desktop-2@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/news-tablet-2.jpg 1x, img/news-tablet-2@2x.jpg 2x">
+                <img src="img/news-mobile-2.jpg" srcset="img/news-mobile-2@2x.jpg 2x" alt="фото карточки стажировка">
+              </picture>
+            </div>
+            <div class="news__text">
+              <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                <use href="__spritemap#sprite-angle"></use>
+              </svg>
+              <div class="news__decor">
+                <h3 class="news__date">20/03/2023</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <h3 class="news__slide-title">Путешествуем по&nbsp;миру</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <div class="news__description-button">
+                  <p class="news__slide-description">Какие места посещают наши студенты весной</p>
+                  <button class="button news__slide-button">
+                    <div class="button__circle">
+                      <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                        <use href="__spritemap#sprite-icon-arrow"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 слайд -->
+          <div class="swiper-slide news__slide">
+            <div class="news__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-desktop-3.webp 1x, img/news-desktop-3@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/news-tablet-3.webp 1x, img/news-tablet-3@2x.webp 2x">
+                <source type="image/webp" srcset="img/news-mobile-3.webp 1x, img/news-mobile-3@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/news-desktop-3.jpg 1x, img/news-desktop-3@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/news-tablet-3.jpg 1x, img/news-tablet-3@2x.jpg 2x">
+                <img src="img/news-mobile-3.jpg" srcset="img/news-mobile-3@2x.jpg 2x" alt="фото карточки стажировка">
+              </picture>
+            </div>
+            <div class="news__text">
+              <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                <use href="__spritemap#sprite-angle"></use>
+              </svg>
+              <div class="news__decor">
+                <h3 class="news__date">17/03/2023</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <h3 class="news__slide-title">Новая программа волонтёрства</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <div class="news__description-button">
+                  <p class="news__slide-description">Программа помощи детям длительностью 4 месяца</p>
+                  <button class="button news__slide-button">
+                    <div class="button__circle">
+                      <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                        <use href="__spritemap#sprite-icon-arrow"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 слайд -->
+          <div class="swiper-slide news__slide">
+            <div class="news__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-desktop-4.webp 1x, img/news-desktop-4@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/news-tablet-4.webp 1x, img/news-tablet-4@2x.webp 2x">
+                <source type="image/webp" srcset="img/news-mobile-4.webp 1x, img/news-mobile-4@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/news-desktop-4.jpg 1x, img/news-desktop-4@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/news-tablet-4.jpg 1x, img/news-tablet-4@2x.jpg 2x">
+                <img src="img/news-mobile-4.jpg" srcset="img/news-mobile-4@2x.jpg 2x" alt="фото карточки стажировка">
+              </picture>
+            </div>
+            <div class="news__text">
+              <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                <use href="__spritemap#sprite-angle"></use>
+              </svg>
+              <div class="news__decor">
+                <h3 class="news__date">10/03/2023</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <h3 class="news__slide-title">Построй свою карьеру</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <div class="news__description-button">
+                  <p class="news__slide-description">Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <button class="button news__slide-button">
+                    <div class="button__circle">
+                      <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                        <use href="__spritemap#sprite-icon-arrow"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- 5 слайд -->
+          <div class="swiper-slide news__slide">
+            <div class="news__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-desktop-3.webp 1x, img/news-desktop-3@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/news-tablet-3.webp 1x, img/news-tablet-3@2x.webp 2x">
+                <source type="image/webp" srcset="img/news-mobile-3.webp 1x, img/news-mobile-3@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/news-desktop-3.jpg 1x, img/news-desktop-3@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/news-tablet-3.jpg 1x, img/news-tablet-3@2x.jpg 2x">
+                <img src="img/news-mobile-3.jpg" srcset="img/news-mobile-3@2x.jpg 2x" alt="фото карточки стажировка">
+              </picture>
+            </div>
+            <div class="news__text">
+              <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                <use href="__spritemap#sprite-angle"></use>
+              </svg>
+              <div class="news__decor">
+                <h3 class="news__date">17/03/2023</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <h3 class="news__slide-title">Новая программа волонтёрства</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <div class="news__description-button">
+                  <p class="news__slide-description">Программа помощи детям длительностью 4 месяца</p>
+                  <button class="button news__slide-button">
+                    <div class="button__circle">
+                      <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                        <use href="__spritemap#sprite-icon-arrow"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 слайд -->
+          <div class="swiper-slide news__slide">
+            <div class="news__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-desktop-4.webp 1x, img/news-desktop-4@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/news-tablet-4.webp 1x, img/news-tablet-4@2x.webp 2x">
+                <source type="image/webp" srcset="img/news-mobile-4.webp 1x, img/news-mobile-4@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/news-desktop-4.jpg 1x, img/news-desktop-4@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/news-tablet-4.jpg 1x, img/news-tablet-4@2x.jpg 2x">
+                <img src="img/news-mobile-4.jpg" srcset="img/news-mobile-4@2x.jpg 2x" alt="фото карточки стажировка">
+              </picture>
+            </div>
+            <div class="news__text">
+              <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                <use href="__spritemap#sprite-angle"></use>
+              </svg>
+              <div class="news__decor">
+                <h3 class="news__date">10/03/2023</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <h3 class="news__slide-title">Построй свою карьеру</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <div class="news__description-button">
+                  <p class="news__slide-description">Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <button class="button news__slide-button">
+                    <div class="button__circle">
+                      <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                        <use href="__spritemap#sprite-icon-arrow"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- 6 слайд -->
+          <div class="swiper-slide news__slide">
+            <div class="news__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/news-desktop-4.webp 1x, img/news-desktop-4@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/news-tablet-4.webp 1x, img/news-tablet-4@2x.webp 2x">
+                <source type="image/webp" srcset="img/news-mobile-4.webp 1x, img/news-mobile-4@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/news-desktop-4.jpg 1x, img/news-desktop-4@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/news-tablet-4.jpg 1x, img/news-tablet-4@2x.jpg 2x">
+                <img src="img/news-mobile-4.jpg" srcset="img/news-mobile-4@2x.jpg 2x" alt="фото карточки стажировка">
+              </picture>
+            </div>
+            <div class="news__text">
+              <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                <use href="__spritemap#sprite-angle"></use>
+              </svg>
+              <div class="news__decor">
+                <h3 class="news__date">10/03/2023</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <h3 class="news__slide-title">Построй свою карьеру</h3>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+              <div class="news__decor">
+                <div class="news__description-button">
+                  <p class="news__slide-description">Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                  <button class="button news__slide-button">
+                    <div class="button__circle">
+                      <svg width="10" height="10" role="img" aria-label="cтрелка кнопки">
+                        <use href="__spritemap#sprite-icon-arrow"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <svg class="news__angle" role="img" aria-label="декоративный элемент angle">
+                  <use href="__spritemap#sprite-angle"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="news__pagination-buttons">
+          <!-- If we need navigation buttons -->
+          <div class="news__slider-button news__button--prev">
+            <svg class="news__slider-arrow" role="img" aria-label="cтрелка кнопки">
+              <use href="__spritemap#sprite-slider-arrow"></use>
+            </svg>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination news__pagination"></div>
+
+          <div class="news__slider-button news__button--next">
+            <svg class="news__slider-arrow" role="img" aria-label="cтрелка кнопки">
+              <use href="__spritemap#sprite-slider-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </section>
     <div data-test="FAQ">FAQ</div>
     <div data-test="reviews">reviews</div>
     <div data-test="contacts">contacts</div>

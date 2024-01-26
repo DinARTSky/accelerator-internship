@@ -1,0 +1,95 @@
+.features__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 55px;
+
+  @include vp-1439 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 23px;
+
+  @include vp-1439 {
+    flex-direction: initial;
+    flex-wrap: wrap;
+    gap: 47px;
+    row-gap: 25px;
+  }
+
+  @include vp-1439 {
+    margin-left: 15px;
+    gap: 15px;
+  }
+}
+
+.features__item {
+  position: relative;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  border: 1px solid $color-default-beige;
+  border-radius: 16px;
+  color: $color-default-beige;
+
+  padding: 22px 60px 22px 24px;
+
+  @include vp-1439 {
+    width: 305px;
+    padding: 25px 24px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 18px 24px;
+  }
+}
+
+.features__number {
+  position: absolute;
+  top: -17px;
+  left: -21px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+
+  width: 42px;
+  height: 42px;
+  background-color: $color-default-blue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include vp-1439 {
+    font-size: 18px;
+  line-height: 18px;
+  }
+
+  @include vp-767 {
+    width: 24px;
+    height: 32px;
+    top: -6px;
+    left: -12px;
+  }
+}
