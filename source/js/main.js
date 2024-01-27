@@ -106,10 +106,11 @@ const initnewsSlider = () => {
           loop: true,
         },
         768: {
-          slidesPerView: 2.125,
+          autoHeight: false,
+          slidesPerView: 2,
+          slidesPerColumn: 2,
           spaceBetween: 30,
           initialSlide: 0,
-          loop: true,
         },
         1440: {
           slidesPerView: 'auto',
