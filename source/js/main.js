@@ -3,7 +3,7 @@
 //import 'swiper/css';
 // core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay, Scrollbar } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, Scrollbar, Grid } from 'swiper/modules';
 
 const initHeroSlider = () => {
 
@@ -85,7 +85,7 @@ const initnewsSlider = () => {
   if (newsSlider) {
     // eslint-disable-next-line
     new Swiper(newsSlider, {
-      modules: [Navigation, Pagination, Autoplay],
+      modules: [Navigation, Pagination, Autoplay, Grid],
       // And if we need scrollbar
       pagination: {
         el: newsPagination,
@@ -109,6 +109,10 @@ const initnewsSlider = () => {
           autoHeight: false,
           slidesPerView: 2,
           slidesPerColumn: 2,
+          grid: {
+            rows: 2,
+            column: 2,
+          },
           spaceBetween: 30,
           initialSlide: 0,
         },
