@@ -1,0 +1,47 @@
+.accordion {
+  //max-width: 500px;
+  margin: 0 auto 50px auto;
+  padding-right: 106px;
+  padding-left: 106px;
+
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element {
+    margin-bottom: 34px;
+    padding: 10px;
+  }
+
+  &__element.is-active > &__button {
+    opacity: 0.5;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 10px;
+
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    padding: 10px;
+  }
+}
+
+.accordion__button {
+  padding: 40px;
+
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: $color-default-blue;
+
+  border: 1px solid $color-default-blue;
+  border-radius: 16px;
+}

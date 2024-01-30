@@ -65,7 +65,7 @@ const initProgramsSlider = () => {
         1440: {
           slidesPerView: 3,
           spaceBetween: 32,
-          initialSlide:0,
+          initialSlide: 0,
           allowTouchMove: false,
         },
       },
@@ -119,7 +119,7 @@ const initnewsSlider = () => {
         1440: {
           slidesPerView: 'auto',
           spaceBetween: 32,
-          initialSlide:0,
+          initialSlide: 0,
         },
       },
     });
@@ -127,6 +127,16 @@ const initnewsSlider = () => {
 };
 
 initnewsSlider();
+
+
+import { initAccordions } from './init-accordion';
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    initAccordions();
+  });
+});
+
 
 //export { initHeroSlider };
 
